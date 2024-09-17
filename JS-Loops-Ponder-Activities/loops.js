@@ -7,9 +7,9 @@ myInfo = {
     favoriteFoods: ["Fettucini", "Steak", "Chicken", "Shrimp", "Baked Potato"],
     hobbies: ["Reading", "Fishing", "Camping"],
     placesLived: [
-      { place: "Rexburg, ID", length: "5 years", },
-      { place: "Ammon, ID",   length: "3 years", },
-      { place: "Sandy, UT",   length: "1 year",  },
+      { place: "Hartsville, SC", length: "7 years", },
+      { place: "Rexburg, ID",   length: "3 years", },
+      { place: "Myrtle Beach, SC",   length: "1 year",  },
     ],
 };
 
