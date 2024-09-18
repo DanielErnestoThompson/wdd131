@@ -1,7 +1,7 @@
 let yr = new Date().getFullYear();
 let lastModified = document.lastModified;
-let author = "Cliff Cummings";
-let place = "Utah, USA";
+let author = "Daniel Thompson";
+let place = "South Carolina, USA";
 
 // \u00A9 is the unicode for the copywrite symbol
 // backticks allow us to insert variables into the output.
