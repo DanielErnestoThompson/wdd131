@@ -33,3 +33,18 @@
         font-weight: 700;
     }
 }
+
+/* This section is for small screens (below 780px) */
+@media screen and (max-width: 780px) {
+    header {
+        display: block;
+    }
+    
+    .navigation {
+        display: block;
+    }
+    
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
