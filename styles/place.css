@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #009c3b; /* Verde da bandeira do Brasil */
-    --secondary-color: #ffdf00; /* Amarelo da bandeira do Brasil */
-    --background-color: #002776; /* Azul da bandeira do Brasil */
-    --text-color: #ffffff; /* Branco para texto */
+    --primary-color: #ba0000; 
+    --secondary-color: #ffdf00; 
+    --background-color: #005b00; 
+    --text-color: #ffffff; /* texto */
   }
   * {
     margin: 0;

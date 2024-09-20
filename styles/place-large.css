@@ -38,7 +38,7 @@
 
     /* Seems easier to move H2 headers up from the bottom instead of down from the top */
     .data h2{
-        background-color: lightblue;
+        background-color: rgb(218, 0, 0);
         color: black;
         position: absolute;
         right: 55%;
@@ -49,7 +49,7 @@
     }
     
     .weather h2{
-        background-color:lightblue;
+        background-color:rgb(237, 234, 5);
         color: black;
         position: absolute;
         right: 55%;
