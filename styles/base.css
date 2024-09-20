@@ -70,7 +70,7 @@ nav {
     color: white;
     padding: 5px;
     display: flex;
-    background-color: #333;
+    background-color: #767171;
     align-items: center;
 }
       
@@ -90,7 +90,7 @@ nav a:hover {
     color: black;
     background-color: yellow;
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: rgb(1, 132, 255);
 }
 
 div img {
