@@ -8,16 +8,15 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
     margin: 1rem;
     font-size: 1.5rem;
     color: white;
-    /* text-align: center; */
 }
 
 h2 {
@@ -30,10 +29,8 @@ section {
     max-width: 960px;
 }
 
-/* padding: 0px keeps nav-bar at bottom of header */
 header {
     display: flex;
-    /* flex-direction: defined in layout ID; */
     justify-content: space-between;
     margin: 0 auto;
     background-color: var(--back_color2);
@@ -64,110 +61,76 @@ main {
     margin: 0 auto; 
 }
 
-
 nav {
-	background-color: orange;
+    background-color: orange;
 }
+
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
 }
+
+/* Navigation */
 .navigation {
     list-style: none;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    display: flex; /* Add this */
-    justify-content: space-around; /* Add this to space the links */
+    background-color: green; 
+    color: #fff;
+    display: flex; 
+    justify-content: space-around;
 }
 
 .navigation a {
-    display: block; /* Already present */
-    flex: 1; /* Add this to distribute space evenly */
-    text-align: center; /* Add this for proper alignment */
+    display: block; 
+    flex: 1;
+    text-align: center; 
+    text-decoration: none;
+    color: #fff;
 }
 
 .navigation a:hover,
 .show a:hover {
-    background-color: yellow; /* Change background on hover */
-    color: black; /* Change text color on hover */
-    font-weight: 700; /* Make text bold on hover */
-    text-decoration: underline; /* Add underline on hover */
+    background-color: yellow; 
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
-
-/*-------------------------------------------------*/
-/* Item Selectors                                  */
-/*-------------------------------------------------*/
-/* Mobile View ***************/
-#layout {
-    /* display: flex defined in header tag */
-    flex-direction: row;
+/* Flexbox layout for larger screens */
+@media screen and (min-width: 780px) {
+    .navigation {
+        flex-direction: row;
+    }
 }
 
-#layout.show {
-    /* display: flex defined in header tag */
-    flex-direction: column;
-}
-
-#menu {
-    display: flex;
-	font-size: 1.5rem;
-    text-decoration: none;
-    padding: .5rem .75rem;
-	background-color: red;
-	color: yellow;
-}
-
-/* content: "☰"; */
-/* content: "≡"; */
-#menu::before {
-	content: "☰";
-}
-
-#menu.show::before {
-	content: "❎";
-}
-#menu.show .hide {
-    display: none;
-}
-
-/*-------------------------------------------------*/
-/* Class Selectors                                 */
-/*-------------------------------------------------*/
-
+/* Grid Layout for Container */
 .container {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
     place-items: center;
 }
 
-.stdlf {
-	font-weight: 700;
-    border-bottom: 1px solid #777;
-    margin-bottom: 1rem;
+/* Adjust Grid for smaller screens */
+@media screen and (max-width: 780px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }
 
-.navigation {
-	list-style: none;
-	background-color: green; /* Change as needed */
-	color: #fff;
-	display: flex; /* Add Flexbox here too */
-	justify-content: space-around; /* Consistent with other navigation */
+#menu {
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: red;
+    color: yellow;
 }
 
-.navigation a {
-	display: block; /* Make the links visible */
-	padding: 1rem;
-	text-align: center; /* Consistent alignment */
-	text-decoration: none;
-	color: #fff;
+#menu::before {
+    content: "☰";
 }
 
-.navigation a:hover {
-	background-color: yellow; /* Consolidate the hover effect */
-	color: black;
-	font-weight: 700;
-	text-decoration: underline;
+#menu.show::before {
+    content: "❎";
 }
 
 .card {
@@ -185,21 +148,6 @@ nav ul {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-/* when the button is clicked - the show class is toggled (added/removed) */
-/* show & hide all happen within the mobile page, not the larger page */
-.show a {
-    display: block;
-}
-.show a:hover {
-	background-color: green;
-	color: #333;
-	font-weight: 700;
-}
-
-.hide {
-    flex-direction: column;
 }
 
 .roboto-thin {
