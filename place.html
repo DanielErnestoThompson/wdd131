@@ -17,10 +17,20 @@
     <script src="scripts/place.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <title>Place Page - Daniel Thompson</title>
+    <style>
+        .svg-icon {
+            width: 50px;  /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            vertical-align: middle; /* Align the image with the text */
+            margin-left: 10px;  /* Add some space between the text and the image */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bolivia</h1>
+        <h1>Bolivia 
+            <img src="images/bright_day.svg" alt="A bright day illustration" class="svg-icon">
+        </h1>
     </header>
     
     <main>
@@ -65,8 +75,6 @@
                 Weather
             </h2>
 
-            <!-- The <span> tag is much like the <div> element, but <div>
-                 is a block-level element and <span> is an inline element. -->
             <p>Temperature:</p>
             <span id="temp"></span>
 
@@ -83,13 +91,6 @@
                 <button>Calculate Wind Chill</button>
             </div>
         </div>
-
-        <!-- Add your SVG image here -->
-        <figure>
-            <img src="images/bright_day.svg" alt="A bright day illustration" width="400" height="400">
-            <figcaption>A beautiful bright day in Bolivia</figcaption>
-        </figure>
-
     </main>
 
     <footer>
